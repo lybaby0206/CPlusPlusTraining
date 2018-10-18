@@ -14,7 +14,7 @@ int fact() {
     cin >> num;
   } while (num < 0);
 
-  factHelper(num);
+  return factHelper(num);
 }
 
 int factHelper(int num) {
