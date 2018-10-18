@@ -20,6 +20,7 @@ public:
   Person() = default;
   Person(const string& n) : name(n) {}
   Person(const string& n, const string& a) : name(n), address(a) {}
+  Person(std::istream &is) {read(is, *this)};
   string getName() const;
   string getAddress() const;
 
