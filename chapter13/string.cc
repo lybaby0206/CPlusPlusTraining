@@ -66,7 +66,7 @@ void String::reallocate() {
 }
 
 String &String::insert(size_t p, const char &c) {
-  if (p > size()) {
+  if (p >= size()) {
     cerr << "Position to insert out of range" << endl;
     //throw out_of_range("Position to insert out of range");
   }
@@ -120,7 +120,7 @@ String &String::insert(size_t p, const char *cStr) {
 }
 
 String &String::erase(size_t p) {
-  if (p > size()) {
+  if (p >= size()) {
     cerr << "Position to erase out of range" << endl;
     // throw out_of_range("Position to erase out of range");
   }
