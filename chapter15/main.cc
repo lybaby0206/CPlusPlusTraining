@@ -61,3 +61,4 @@ int main() {
   cout << pf2.getUntakenSpots().size() << ' ' << pf2.isFullVehicles() << endl;
 
 }
+//ying'comments
